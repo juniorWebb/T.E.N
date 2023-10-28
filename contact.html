@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from kodesolution.com/html/2023/immigro-html/page-service.html. Modified by TechMinds Mon, 09 Oct 2023 10:32:37 GMT -->
+<head>
+<meta charset="utf-8">
+<title>The Excellence Nexus</title>
+
+<!-- Stylesheets -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="css/nav.css" />
+<script src="js/observers.js" defer></script>
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+	<!-- Preloader -->
+	<div class="preloader"></div>
+
+      <!-- Main Header-->
+      <header>
+        <div class="logo-box"><a href="./index.html"><img src="images/logo-3.png" alt="" /></a></div>
+
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="./about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./services.html" class="nav__link">Services</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#testimonials-section" class="nav__link">Testimonials</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#FAQS-section" class="nav__link">FAQs</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="sec-nav">
+          <ul class="nav__extra">
+            <li class="navlist-item">
+              <a class="nav__link--btn" href="./contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li class="navlist-item">
+              
+              <li><a class="nav__link--btn nav__link--btn--sociallink" href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </li>
+          </ul>
+          <div class="hamburger" onclick="openNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </header>
+      <!--End Main Header -->
+
+      <!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+      
+			<nav class="menu-box">
+				<div class="upper-box">
+					<div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+					<div class="close-btn" onclick="closeNav()">&times;</div>
+				</div>
+		
+          <nav class="main-nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a href="./about.html" class="nav__link">About</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="./services.html" class="nav__link">Services</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="#testimonials-section" class="nav__link">Testimonials</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="#FAQS-section" class="nav__link">FAQs</a>
+              </li>
+            </ul>
+          </nav>
+
+				<ul class="contact-list-one">
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<i class="icon lnr-icon-phone-handset"></i>
+							<span class="title">Call Now</span>
+              <a href="tel:+2348140229745">+234 814 022 9745</a>
+						</div>
+					</li>
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<span class="icon lnr-icon-envelope1"></span>
+							<span class="title">Send Email</span>
+              <a href="mailto:theexcellencenexus@gmail.com">theexcellencenexus@gmail.com</a>
+						</div>
+					</li>
+				</ul>
+		
+				<ul class="social-links">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- End Mobile Menu -->
+
+		<!-- Main Slider -->
+		<section class="main-slider" id="intro">
+		</section>
+		<!-- End Main Slider-->
+
+	<!--Contact Details Start-->
+	<section class="contact-details">
+		<div class="container ">
+			<div class="row">
+				<div class="col-xl-7 col-lg-6">
+					<div class="sec-title">
+						<span class="sub-title">Send us email</span>
+						<h2>Feel free to write</h2>
+					</div>
+					<!-- Contact Form -->
+					<form id="contact_form" name="contact_form" class="" action="#" method="post">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+								</div>
+							</div>
+						</div>
+						<div class="mb-3">
+							<textarea name="form_message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
+						</div>
+						<div class="mb-3">
+							<input name="form_botcheck" class="form-control" type="hidden" value="" />
+							<button type="submit" class="btn btn-style-one" data-loading-text="Please wait..."><span class="btn-title">Send message</span></button>
+							<button type="reset" class="btn btn-style-one bg-theme-color5"><span class="btn-title">Reset</span></button>
+						</div>
+					</form>
+					<!-- Contact Form Validation-->
+				</div>
+				<div class="col-xl-5 col-lg-6">
+					<div class="contact-details__right">
+						<div class="sec-title">
+							<span class="sub-title">Need any help?</span>
+							<h2>Get in touch with us</h2>
+							<div class="text">Lorem ipsum is simply free text available dolor sit amet consectetur notted adipisicing elit sed do eiusmod tempor incididunt simply dolore magna.</div>
+						</div>
+						<ul class="list-unstyled contact-details__info">
+							<li>
+								<div class="icon bg-theme-color2">
+									<span class="lnr-icon-phone-plus"></span>
+								</div>
+								<div class="text">
+									<h6>Have any question?</h6>
+									<a href="tel:+2348140229745"><span>Free</span>+234 8140 229 745</a>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<span class="lnr-icon-envelope1"></span>
+								</div>
+								<div class="text">
+									<h6>Write email</h6>
+									<a href="mailto:theexcellencenexus@gmail.com">theexcellencenexus@gmail.com</a>
+								</div>
+							</li>
+							<li>
+								<div class="icon">
+									<span class="lnr-icon-location"></span>
+								</div>
+								<div class="text">
+									<h6>Visit anytime</h6>
+									<span>66 broklyn golden street. New York</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Contact Details End-->
+
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <div class="bg bg-pattern-7"></div>
+        <div class="auto-container">
+          <div class="footer-upper">
+            <div class="logo-box"><img src="images/logo-2.png" alt="" /></div>
+            <ul class="contact-info">
+              <li>
+                <i class="icon fa fa-phone-square"></i>
+                <span class="title">Phone:</span>
+                <div class="text">
+                  <a href="tel:+2348140229745">+234 814 022 9745</a>
+                </div>
+              </li>
+              <li>
+                <i class="icon fa fa-envelope"></i>
+                <span class="title">Email:</span>
+                <div class="text">
+                  <a href="mailto:theexcellencenexus@gmail.com">theexcellencenexus@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <i class="icon fa fa-map-marker"></i>
+                <span class="title">Address:</span>
+                <div class="text">30 Broklyn Street. USA</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Widgets Section-->
+        <div class="widgets-section">
+          <div class="auto-container">
+            <div class="row">
+              <!--Footer Column-->
+              <div class="footer-column col-lg-8 col-md-12 mb-0">
+                <div class="row">
+                  <div class="footer-widget col-lg-4 col-md-4 col-ms-12">
+                    <h6 class="widget-title">Links</h6>
+                    <ul class="user-links">
+                      <li><a href="./about.html">About</a></li>
+                      <li><a href="./services.html">Services</a></li>
+                      <li><a href="#">Testimonials</a></li>
+                      <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-widget col-lg-4 col-md-4 col-ms-12">
+                    <h6 class="widget-title">Visa</h6>
+                    <ul class="user-links">
+                      <li><a href="#">Student Visa</a></li>
+                      <li><a href="#">Business Visa</a></li>
+                      <li><a href="#">Family Visa</a></li>
+                      <li><a href="#">Travel Visa</a></li>
+                      <li><a href="#">Work Visa</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-widget col-lg-4 col-md-4 col-ms-12">
+                    <h6 class="widget-title">Services</h6>
+                    <ul class="user-links">
+                      <li><a href="#">education counseling</a></li>
+                      <li><a href="#">admission processing</a></li>
+                      <li><a href="#">visa support</a></li>
+                      <li><a href="#">departure and settling support</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Footer Column-->
+              <div class="footer-column col-xl-3 col-lg-12 col-md-6">
+                <div class="footer-widget">
+                  <h6 class="widget-title">Newsletter</h6>
+                  <div class="subscribe-form">
+                    <div class="text">
+                      Signup for our latest news & articles.
+                    </div>
+                    <form method="post" action="#">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          name="email"
+                          class="email"
+                          value=""
+                          placeholder="Email Address"
+                          required=""
+                        />
+                        <button type="button" class="theme-btn">
+                          <i class="fa fa-paper-plane"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="inner-container">
+              <div class="copyright-text">
+                &copy; Copyright 2023 by <a href="index.html">TheExcellenceNexus</a>. Powered by TechMinds.
+              </div>
+              <ul class="social-icon-two">
+                <li>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--End Main Footer -->
+
+</div><!-- End Page Wrapper -->
+
+
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/script.js"></script>
+
+<!-- form submit -->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.form.min.js"></script>
+<script>
+	(function($) {
+		$("#contact_form").validate({
+			submitHandler: function(form) {
+				var form_btn = $(form).find('button[type="submit"]');
+				var form_result_div = '#form-result';
+				$(form_result_div).remove();
+				form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+				var form_btn_old_msg = form_btn.html();
+				form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+				$(form).ajaxSubmit({
+					dataType:  'json',
+					success: function(data) {
+						if( data.status == 'true' ) {
+							$(form).find('.form-control').val('');
+						}
+						form_btn.prop('disabled', false).html(form_btn_old_msg);
+						$(form_result_div).html(data.message).fadeIn('slow');
+						setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+					}
+				});
+			}
+		});
+	})(jQuery);
+</script>
+</body>
+
+<!-- Mirrored from kodesolution.com/html/2023/immigro-html/page-service.html. Modified by TechMinds Mon, 09 Oct 2023 10:32:37 GMT -->
+</html>
