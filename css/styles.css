@@ -48,8 +48,8 @@ License: copyright commercial
 @import url("tm-utility-classes.css");
 :root {
   --theme-color1: #0d1a36;
-  --theme-color2: #3131fe;
-  --theme-color3: #ff3e3e;
+  --theme-color2: #3d3dff;
+  --theme-color3: #fe2d2d;
   --theme-color4: #ebeef5;
   --bg-theme-color1: var(--theme-color1);
   --bg-theme-color2: var(--theme-color2);
@@ -980,7 +980,7 @@ Scroll To Top style
 }
 .service-block .image-box .title {
   position: absolute;
-  left: 30px;
+  left: 20px;
   bottom: 25px;
   color: #fff;
   margin-bottom: 0;
@@ -3291,11 +3291,7 @@ Section Title
     margin-top: 20px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .faqs-section .image-column .image-box .sub-title {
-    left: 20px;
-  }
-}
+
 .faqs-section .image-column .image-box .sub-title .txt {
   display: block;
   position: relative;
@@ -3376,11 +3372,19 @@ Section Title
 
 .accordion-box {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .accordion-box .block {
   position: relative;
   background-color: #ffffff;
   margin-bottom: 10px;
+  width: 30vw;
+  flex-grow: 1;
 }
 .accordion-box .block.active-block {
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
@@ -3435,6 +3439,18 @@ Section Title
 }
 .accordion-box .block .acc-content.current {
   display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .faqs-section .image-column .image-box .sub-title {
+    left: 20px;
+  }
+  .accordion-box {
+    flex-direction: column;
+  }
+  .accordion-box .block {
+    width: 80vw;
+  }
 }
 
 /*** 
@@ -4351,8 +4367,8 @@ Section Title
   align-items: center;
   margin-left: -50px;
   margin-right: -50px;
-  background-color: rgb(27, 47, 90);
-  padding-right: 40px;
+  /* background-color: rgb(27, 47, 90); */
+  padding-right: 50px;
   justify-content: space-between;
 }
 @media only screen and (max-width: 1199px) {
@@ -4365,7 +4381,7 @@ Section Title
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
-    padding: 0 70px 30px;
+    padding: 0 30px 30px;
   }
 }
 .main-footer .footer-upper .logo-box {
