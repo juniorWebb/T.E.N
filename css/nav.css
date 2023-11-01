@@ -154,7 +154,7 @@ header .logo-box img {
 }
 
 .line{
-  width: 1.6rem;
+  width: 1.5rem;
   padding: .1em 0em;
   margin: 3px 0;
   background-color: var(--burger-bg);
@@ -213,7 +213,7 @@ header .logo-box img {
   width: 40%;
   position: relative;
   top: -20px;
-  left: 2px;
+  left: 12px;
   text-align: center;
   font-size: 2.4rem;
   color: var(--theme-color3);
