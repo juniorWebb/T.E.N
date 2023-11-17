@@ -4,7 +4,7 @@ const mobileNavBar = document.querySelector(".menu-box");
 const backDrop = document.querySelector(".mobile-menu .menu-backdrop");
 
 const sectionOneOptions = {
-  rootMargin: "-682px 0px 0px 0px"
+  rootMargin: "-670px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(

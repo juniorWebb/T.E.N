@@ -1,10 +1,3 @@
-.site-logo {
-  font-weight: 900;
-  font-size: 0.8rem;
-  color: var(--text);
-  text-decoration: none;
-}
-
 header {
   --text: #f4f4f4;
   --text-inverse: #333;
@@ -26,10 +19,16 @@ header {
 
 header .logo-box {
   position: relative;
+  transform: scale(1);
+  transition: all .3s ease-in;
+}
+header .logo-box:hover {
+  position: relative;
+  transform: scale(1.10);
 }
 
 header .logo-box img {
-  width: 4rem;
+  width: 4.5rem;
 }
 
 .nav__list {
@@ -139,6 +138,17 @@ header .logo-box img {
 }
 
 @media(max-width: 840px){
+
+  header {
+    padding: 2em 1.5em;
+}
+  .nav__link--btn {
+    font-size: 13px;
+  }
+  .nav__link--btn--sociallink {
+    padding: 2px 10px;
+    font-size: 1rem;
+  }
 
   .sec-nav {
     width: 24rem;
@@ -329,14 +339,5 @@ header .logo-box img {
 }
 
 @media(max-width: 450px){
-  header {
-    padding: 2em 1.5em;
-}
-  .nav__link--btn {
-    font-size: 13px;
-  }
-  .nav__link--btn--sociallink {
-    padding: 2px 10px;
-    font-size: 1rem;
-  }
+
 }
