@@ -830,7 +830,7 @@ li {
   z-index: 2;
 }
 .services-header.main-block {
-  padding: 8vh 2vh 6vh 2vh;
+  padding: 11vh 2vh 6vh 2vh;
 }
 .services-header .sec-title {
   margin-bottom: 30px;
@@ -1865,6 +1865,9 @@ Section Title
   position: relative;
   padding: 180px 0 70px;
 }
+#about-main {
+  padding-top: 100px;
+}
 
 .about-section .content-column {
   position: relative;
@@ -1879,7 +1882,7 @@ Section Title
 }
 .about-section .content-column .sec-title h4 {
   color: var(--theme-color2);
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 35px;
 }
 .about-section .content-column .sec-title .text {
